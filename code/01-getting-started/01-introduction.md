@@ -4,7 +4,7 @@ What is Nix?
 
 ## Programming Language
 
-- Dynamic typed - Similar semantics with JavaScript and Lisp.
+- Dynamically typed - Similar semantics with JavaScript and Lisp.
 
 - Functional programming - Higher order functions, immutability, etc.
 
@@ -12,11 +12,11 @@ What is Nix?
 
 ## Package Manager
 
-- Packages as special Nix objects that produce derivations and build artifacts.
+- Packages are special Nix objects that produce derivations and build artifacts.
 
 - One package can serve as build input of another package.
 
-- Multiple versions of the "same" package can present on the same system.
+- Multiple versions of the "same" package can be present on the same system.
 
 ## Build System
 
