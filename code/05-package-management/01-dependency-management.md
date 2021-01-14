@@ -82,7 +82,7 @@ Dependency resolution is a complex topic on its own. Different languages
 have their own package managers that deal with dependency resolution
 differently. e.g. cabal-install, npm, mvn, etc. There are also OS-level
 package managers that have to deal with dependencies resolution.
-e.g. Debian, Ubuntu, Fedora, Arch, etc.
+e.g. apt (for Debian and Ubuntu), rpm (Fedora), pacman (Arch Linux), etc.
 
 To support package management across multiple languages and multiple
 platforms, Nix has its own unique challenge of managing dependencies.
@@ -96,7 +96,7 @@ nixpkgs.
 For a dependency resolution algorithm to determine what versions of
 dependency to use, it must first refer to a _registry_ that contains
 all versions available to all packages. Each package manager have
-their own registry, e.g. Hackage, npm registry, Debian registry, etc.
+their own registry, e.g. Hackage, npm registry, apt registry, etc.
 
 Package registries are usually mutable databases that are constantly
 updated. This creates an issue with _reproducibility_: the result
